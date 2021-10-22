@@ -1,9 +1,9 @@
-import SearchBook from "./searchBook/SearchBooks";
+import SearchBooks from "./searchBook/SearchBooks";
 
 function App() {
   return (
     <div className="App">
-      <SearchBook />
+      <SearchBooks />
     </div>
   );
 }
