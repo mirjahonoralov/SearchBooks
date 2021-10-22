@@ -80,7 +80,11 @@ const SearchBooks = () => {
                 alt="bookImage not found"
               />
               <div className="book">
-                <a href={item.volumeInfo.infoLink} target="_blank">
+                <a
+                  href={item.volumeInfo.infoLink}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {item.volumeInfo.title} <BsFillArrowUpRightCircleFill />
                 </a>
                 <div className="authors">Author: {item.volumeInfo.authors}</div>
