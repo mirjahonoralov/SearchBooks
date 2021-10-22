@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(50, 50, 50);
+}
+
+.noDataStyle {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .content {
+    text-align: center;
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #fff;
+    .title {
+      font-family: "Poppins", sans-serif;
+      // text-align: end;
+      display: flex;
+      align-items: flex-start;
+      h1 {
+        font-size: 60px;
+      }
+      h2 {
+        color: yellow;
+      }
+    }
+    .formError {
+      width: 700px;
+      text-align: center;
+      background-color: rgb(50, 50, 50);
+      padding: 10px;
+      border-radius: 10px;
+      position: relative;
+      svg {
+        font-size: 30px;
+        position: absolute;
+        left: 18px;
+      }
+      .error {
+        color: #fff;
+        text-align: start;
+        padding: 3px 5px;
+        border-radius: 3px;
+        color: red;
+        background-color: #fff;
+        width: max-content;
+      }
+      .searchBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 45px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        input {
+          width: 100%;
+          height: 100%;
+          padding-left: 45px;
+          font-size: 20px;
+          outline: none;
+          border-radius: 5px;
+          border: none;
+        }
+        button {
+          padding: 0 10px;
+          cursor: pointer;
+          outline: none;
+          height: 100%;
+          margin-left: 10px;
+          border-radius: 5px;
+          border: none;
+          background-color: #fff;
+          font-size: 20px;
+          font-weight: 500;
+          &:hover {
+            background-color: rgb(0, 255, 0);
+          }
+        }
+      }
+    }
+
+    .searchContent {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      width: 100%;
+      padding: 30px;
+      border-radius: 10px;
+      .books {
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border: 2px solid yellow;
+        display: flex;
+        border-radius: 10px;
+        img {
+          width: 200px;
+        }
+        .book {
+          padding: 10px;
+          font-size: 25px;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          svg {
+            font-size: 20px;
+            color: blue;
+          }
+          .authors {
+            padding: 20px 10px;
+            text-align: left;
+          }
+          a {
+            text-align: left;
+            padding: 10px;
+            font-size: 25px;
+            text-decoration: none;
+            color: #000;
+            &:hover {
+              color: blue;
+            }
+          }
+        }
+      }
+    }
+  }
+}
