@@ -14,6 +14,16 @@ body {
   height: 100vh;
 }
 
+.error {
+  color: #fff;
+  text-align: start;
+  padding: 3px 5px;
+  border-radius: 3px;
+  color: red;
+  background-color: #fff;
+  width: max-content;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -43,7 +53,6 @@ body {
       width: 700px;
       text-align: center;
       background-color: rgb(50, 50, 50);
-      padding: 10px;
       border-radius: 10px;
       position: relative;
       svg {
@@ -51,15 +60,7 @@ body {
         position: absolute;
         left: 18px;
       }
-      .error {
-        color: #fff;
-        text-align: start;
-        padding: 3px 5px;
-        border-radius: 3px;
-        color: red;
-        background-color: #fff;
-        width: max-content;
-      }
+
       .searchBar {
         display: flex;
         align-items: center;
@@ -73,7 +74,7 @@ body {
           padding-left: 45px;
           font-size: 20px;
           outline: none;
-          border-radius: 5px;
+          border-radius: 20px;
           border: none;
         }
         button {
@@ -82,7 +83,7 @@ body {
           outline: none;
           height: 100%;
           margin-left: 10px;
-          border-radius: 5px;
+          border-radius: 15px;
           border: none;
           background-color: #fff;
           font-size: 20px;
@@ -136,6 +137,10 @@ body {
             &:hover {
               color: blue;
             }
+          }
+          .bookLink {
+            color: blue;
+            font-size: 16px;
           }
         }
       }
