@@ -1,11 +1,10 @@
 //  ---- key ---- AIzaSyASoeC2YIEVyNH3MGURPUFEl9yS7njId-4
-import React from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
 import SearchBar from "./SearchBar";
+import BooksContent from "./books/BooksContent";
 import "./styles/style.scss";
 import "./styles/media.scss";
-import axios from "axios";
-import { useState, useEffect } from "react/cjs/react.development";
-import BooksContent from "./books/BooksContent";
 
 const SearchBooks = () => {
   const [name, setName] = useState({ items: [] });
