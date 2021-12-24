@@ -6,8 +6,8 @@ const SearchContent = ({ name }) => {
 
   return (
     <div className="searchContent">
-      {name.items.map((item) => (
-        <div className="books">
+      {name.items.map((item, index) => (
+        <div className="books" key={index}>
           <img
             src={
               item.volumeInfo.imageLinks
