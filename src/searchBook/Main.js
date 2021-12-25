@@ -3,8 +3,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import SearchBar from "./SearchBar";
 import BooksContent from "./books/BooksContent";
-import "./styles/style.scss";
-import "./styles/media.scss";
+import "./styles/style.css";
+import "./styles/media.css";
 
 const SearchBooks = () => {
   const [name, setName] = useState({ items: [] });
