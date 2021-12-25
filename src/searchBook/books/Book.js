@@ -5,7 +5,7 @@ const Book = ({ item }) => {
   return (
     <div className="book">
       Book name:
-      <a href={item.volumeInfo.infoLink} target="_blank" rel="noreferrer">
+      <a href={item.volumeInfo.infoLink} target="_blank">
         {item.volumeInfo.title} <BsFillArrowUpRightCircleFill />
       </a>
       <div className="authors">Author: {item.volumeInfo.authors}</div>
@@ -13,7 +13,6 @@ const Book = ({ item }) => {
         className="bookLink"
         href={item.volumeInfo.previewLink}
         target="_blank"
-        rel="noreferrer"
       >
         About book
       </a>
